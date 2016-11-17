@@ -1,0 +1,56 @@
+PODS:
+  - Alamofire (4.0.1)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - FBSDKCoreKit (4.16.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.16.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.16.0):
+    - FBSDKCoreKit
+  - GoogleAppUtilities (1.1.1):
+    - GoogleSymbolUtilities (~> 1.0)
+  - GoogleAuthUtilities (2.0.1):
+    - GoogleNetworkingUtilities (~> 1.0)
+    - GoogleSymbolUtilities (~> 1.0)
+  - GoogleNetworkingUtilities (1.2.1):
+    - GoogleSymbolUtilities (~> 1.0)
+  - GoogleSignIn (4.0.0):
+    - GoogleAppUtilities (~> 1.1)
+    - GoogleAuthUtilities (~> 2.0)
+    - GoogleNetworkingUtilities (~> 1.2)
+    - GoogleUtilities (~> 1.3)
+  - GoogleSymbolUtilities (1.1.1)
+  - GoogleUtilities (1.3.1):
+    - GoogleSymbolUtilities (~> 1.0)
+  - KeychainAccess (3.0.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
+  - GoogleSignIn
+  - KeychainAccess
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  FBSDKCoreKit: 7a6baaed4a2b2a244ba253346713bdbc74df135b
+  FBSDKLoginKit: 9a514a55a7d05190f64d4ef09502737588b5b561
+  FBSDKShareKit: e81505de17fc0624cbaa87b83cccc9f2a786e6cb
+  GoogleAppUtilities: f1730f91f67767b453c289577040dd3f425ffdc7
+  GoogleAuthUtilities: d7a19615cd7627688afcf181737f1011ee8b5a23
+  GoogleNetworkingUtilities: 3e83269048cfb498dc7ec83ab36813360965c74f
+  GoogleSignIn: 09036ed61f8e75f1424100d63f7719480b2428c3
+  GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
+  GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
+  KeychainAccess: 412bf2650d9aebfc8135a58103b90ec38caad7f8
+
+PODFILE CHECKSUM: d09fe71c28c82ba4dd63ed454d1b58b254481d6b
+
+COCOAPODS: 1.1.0.beta.1

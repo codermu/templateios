@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Uz-Oe-Zor">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="IosBlueprint" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Spl-z1-pTJ"/>
+                    <connections>
+                        <segue destination="DI3-1a-fuz" kind="show" identifier="register" id="Ier-O3-dfT"/>
+                        <segue destination="qAf-qr-b2a" kind="show" identifier="forgotPassword" id="ylg-gz-RfF"/>
+                        <segue destination="b34-Hu-62Y" kind="show" identifier="dashboard" id="twO-hg-AYn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="252" y="856"/>
+        </scene>
+        <!--Dashboard View Controller-->
+        <scene sceneID="8FS-qU-04n">
+            <objects>
+                <viewController id="b34-Hu-62Y" customClass="DashboardViewController" customModule="IosBlueprint" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hit-ZG-k3r"/>
+                        <viewControllerLayoutGuide type="bottom" id="jZB-mP-OE5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tjd-xp-Oh1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DashBoard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DmJ-ss-XPB">
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wtU-9a-5OO">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blz-37-sT9">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="gWp-NT-ViT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="blz-37-sT9" firstAttribute="top" secondItem="wtU-9a-5OO" secondAttribute="bottom" constant="84" id="10X-dJ-fuP"/>
+                            <constraint firstItem="wtU-9a-5OO" firstAttribute="leading" secondItem="tjd-xp-Oh1" secondAttribute="leadingMargin" id="JVd-fv-xDb"/>
+                            <constraint firstItem="wtU-9a-5OO" firstAttribute="trailing" secondItem="tjd-xp-Oh1" secondAttribute="trailingMargin" id="TPq-VB-KfN"/>
+                            <constraint firstItem="DmJ-ss-XPB" firstAttribute="centerX" secondItem="wtU-9a-5OO" secondAttribute="centerX" id="UT4-LZ-bAw"/>
+                            <constraint firstItem="wtU-9a-5OO" firstAttribute="top" secondItem="DmJ-ss-XPB" secondAttribute="bottom" constant="21" id="ZPf-rC-DTK"/>
+                            <constraint firstItem="DmJ-ss-XPB" firstAttribute="top" secondItem="hit-ZG-k3r" secondAttribute="bottom" constant="55" id="dmH-TA-vfs"/>
+                            <constraint firstItem="wtU-9a-5OO" firstAttribute="trailing" secondItem="blz-37-sT9" secondAttribute="trailing" id="gTm-oe-ybX"/>
+                            <constraint firstItem="wtU-9a-5OO" firstAttribute="leading" secondItem="blz-37-sT9" secondAttribute="leading" id="m8q-Gu-vpP"/>
+                            <constraint firstItem="jZB-mP-OE5" firstAttribute="top" secondItem="blz-37-sT9" secondAttribute="bottom" constant="117" id="w3C-QB-6W3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="content" destination="wtU-9a-5OO" id="Bd1-Xz-yMg"/>
+                        <outlet property="token" destination="blz-37-sT9" id="4Xk-1C-UXu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcg-MK-ieI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="252" y="2132.3838080959522"/>
+        </scene>
+        <!--Forgot Password View Controller-->
+        <scene sceneID="qXu-bQ-wdf">
+            <objects>
+                <viewController id="qAf-qr-b2a" customClass="ForgotPasswordViewController" customModule="IosBlueprint" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4QO-Nw-TnQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="sTi-Sr-4cw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Srx-s9-RlK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="hHS-t2-o7C" kind="show" identifier="confirmForgotPassword" id="sh4-7R-RVe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5np-4g-3b4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="482"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="PVB-Gc-io0">
+            <objects>
+                <viewController id="DI3-1a-fuz" customClass="RegisterViewController" customModule="IosBlueprint" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9mM-6G-QeI"/>
+                        <viewControllerLayoutGuide type="bottom" id="kfv-o7-zEK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tgf-lO-nud">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="b34-Hu-62Y" kind="show" identifier="dashboard" id="bNb-fV-3RQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DUa-bX-yNf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="1154"/>
+        </scene>
+        <!--Password Recovery View Controller-->
+        <scene sceneID="Zot-jz-Ftd">
+            <objects>
+                <viewController id="hHS-t2-o7C" customClass="PasswordRecoveryViewController" customModule="IosBlueprint" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jGy-66-EYm"/>
+                        <viewControllerLayoutGuide type="bottom" id="WBa-7v-Vua"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZPd-fr-crX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="b34-Hu-62Y" kind="show" identifier="passwordRecovered" id="hZK-zZ-5rS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GbV-Df-ToN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1870" y="482"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vFY-1s-pHt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Uz-Oe-Zor" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fnl-7P-f3a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XR3-dG-XRm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GK0-H7-EWP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="252" y="37"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="hZK-zZ-5rS"/>
+    </inferredMetricsTieBreakers>
+</document>
