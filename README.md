@@ -34,4 +34,8 @@ https://monosnap.com/file/RE84wrXjRlBF4PPtQWwXDSYZ9sHxzw
 
 ![Alt text](https://monosnap.com/file/MBVbaaW3nHK5bCZd4iHBqAbYtuTwJ1.png)
 
+- change google client id
+
+![Alt text](https://monosnap.com/file/TK8I0S1wUo0ypN3amXC0DCcFgpeiL0.png)
+
 - clean  project, then build and run the project
