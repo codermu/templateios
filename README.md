@@ -1,7 +1,8 @@
 # templateios
 
 Template for creating a new Ios App with Oauth2 Protocol ready,
-writen in swift 3 Xcode 8 is required to open this project
+
+writen in Swift 3, Xcode 8 is required to open this project
 
 features included in this project :
 
