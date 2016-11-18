@@ -33,3 +33,5 @@ https://monosnap.com/file/RE84wrXjRlBF4PPtQWwXDSYZ9sHxzw
 ![Alt text](https://monosnap.com/file/ktNCTM4LAfhsWZiBFRGvqgy6hMGWi1.png)
 
 ![Alt text](https://monosnap.com/file/MBVbaaW3nHK5bCZd4iHBqAbYtuTwJ1.png)
+
+- clean  project, then build and run the project
