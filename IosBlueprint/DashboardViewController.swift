@@ -19,6 +19,8 @@ class DashboardViewController: UIViewController {
         
         token.text = oauth2Token
         
+        self.navigationItem.setHidesBackButton(true, animated: false)
+        
         // Do any additional setup after loading the view.
     }
 
@@ -27,6 +29,15 @@ class DashboardViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func logoutBtn_tap(_ sender: AnyObject) {
+        
+        
+       // sample of logout process
+       let auth =  AuthService()
+        auth.signOut()
+        
+        self.navigationController?.popToRootViewController(animated: true)
+    }
 
     /*
     // MARK: - Navigation

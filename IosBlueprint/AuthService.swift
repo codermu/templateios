@@ -8,6 +8,8 @@
 
 import Foundation
 import KeychainAccess
+import FBSDKLoginKit
+import GoogleSignIn
 
 var keychain = Keychain(service: "com.indosystem.arisan")
 
@@ -57,10 +59,26 @@ class AuthService {
     // on success clean stored user data from apps
     func signOut(){
         do {
+            
+            // logout from social media
+            
+            facebookLogout()
+            googleLogout()
+            
             try keychain.remove("token")
         } catch let error {
             print("error: \(error)")
         }
+    }
+    
+    // facebook logout
+    func facebookLogout(){
+        let fb = FBSDKLoginManager()
+        fb.logOut()
+    }
+    // google logout
+    func googleLogout(){
+        GIDSignIn.sharedInstance().signOut()
     }
     
     // forgot password

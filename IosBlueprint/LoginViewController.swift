@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FBSDKLoginKit
 import GoogleSignIn
 
 class LoginViewController: UIViewController,LoginPresenterView,GIDSignInUIDelegate {
@@ -45,15 +44,19 @@ class LoginViewController: UIViewController,LoginPresenterView,GIDSignInUIDelega
 
     }
     
+    // handle custom google sign in button
     func handleGoogleSignIn(){
        GIDSignIn.sharedInstance().signIn()
     }
     
     // get current logged in user
-    func sign(inWillDispatch signIn: GIDSignIn!, error: Error!) {
-        let user = signIn.currentUser!
-        self.loginPresenter.googleSignIn(id: user.authentication.idToken, email: user.profile.email, name: user.profile.name)
-    }
+//    func sign(inWillDispatch signIn: GIDSignIn!, error: Error!) {
+//        
+//        if let user = signIn.currentUser {
+//            self.loginPresenter.googleSignIn(id: user.authentication.idToken, email: user.profile.email, name: user.profile.name)
+//        }
+//        
+//    }
     
     func handleFacebookSignIn(){
         self.loginPresenter.facebookSignIn()

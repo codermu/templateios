@@ -31,7 +31,7 @@
             </objects>
             <point key="canvasLocation" x="252" y="856"/>
         </scene>
-        <!--Dashboard View Controller-->
+        <!--Dashboard-->
         <scene sceneID="8FS-qU-04n">
             <objects>
                 <viewController id="b34-Hu-62Y" customClass="DashboardViewController" customModule="IosBlueprint" customModuleProvider="target" sceneMemberID="viewController">
@@ -76,6 +76,13 @@
                             <constraint firstItem="jZB-mP-OE5" firstAttribute="top" secondItem="blz-37-sT9" secondAttribute="bottom" constant="117" id="w3C-QB-6W3"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Dashboard" id="io2-oR-CGf">
+                        <barButtonItem key="rightBarButtonItem" title="Log out" id="L0N-py-99A">
+                            <connections>
+                                <action selector="logoutBtn_tap:" destination="b34-Hu-62Y" id="1JZ-RC-Qr7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="content" destination="wtU-9a-5OO" id="Bd1-Xz-yMg"/>
                         <outlet property="token" destination="blz-37-sT9" id="4Xk-1C-UXu"/>
@@ -153,7 +160,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Uz-Oe-Zor" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fnl-7P-f3a">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="fnl-7P-f3a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

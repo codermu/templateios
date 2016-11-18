@@ -24,7 +24,7 @@ import FBSDKLoginKit
     func stopLoading()
 }
 
-class LoginPresenter {
+class LoginPresenter : GoogleSignInHandler{
     private let authService : AuthService
     weak private var loginView : LoginPresenterView?
     
@@ -88,6 +88,16 @@ class LoginPresenter {
             }
             
             self.showEmailAddress()
+        }
+    }
+    
+    override func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+    
+        // code on sign in
+        if (error == nil) {
+            self.googleSignIn(id: user.authentication.idToken, email: user.profile.email, name: user.profile.name)
+        } else {
+            print("\(error.localizedDescription)")
         }
     }
     

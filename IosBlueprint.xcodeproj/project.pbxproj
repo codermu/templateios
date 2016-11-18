@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0219DD1DDEAF5900326ACB /* GoogleSignInHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0219DC1DDEAF5900326ACB /* GoogleSignInHandler.swift */; };
 		2A89634C1DD46A4600CC449C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89634B1DD46A4600CC449C /* AppDelegate.swift */; };
 		2A89634E1DD46A4600CC449C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A89634D1DD46A4600CC449C /* LoginViewController.swift */; };
 		2A8963511DD46A4600CC449C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A89634F1DD46A4600CC449C /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 
 /* Begin PBXFileReference section */
 		118B6528C2F8F2E022EB75D9 /* Pods-IosBlueprint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IosBlueprint.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IosBlueprint/Pods-IosBlueprint.debug.xcconfig"; sourceTree = "<group>"; };
+		2A0219DC1DDEAF5900326ACB /* GoogleSignInHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoogleSignInHandler.swift; path = ../GoogleSignInHandler.swift; sourceTree = "<group>"; };
 		2A8963481DD46A4600CC449C /* IosBlueprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IosBlueprint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A89634B1DD46A4600CC449C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A89634D1DD46A4600CC449C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 		2AEB1A131DD5BE9300E06AB9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2A0219DC1DDEAF5900326ACB /* GoogleSignInHandler.swift */,
 				2AEFCF501DD963600003B6DE /* APIHandler.swift */,
 			);
 			name = Common;
@@ -619,6 +622,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A0219DD1DDEAF5900326ACB /* GoogleSignInHandler.swift in Sources */,
 				2AEB1A121DD5BC4200E06AB9 /* UserService.swift in Sources */,
 				2AEB1A0D1DD5B7E000E06AB9 /* LoginPresenter.swift in Sources */,
 				2AD181681DDC128E0051B3D3 /* PasswordRecoveryViewController.swift in Sources */,
